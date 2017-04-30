@@ -19,5 +19,6 @@ Request examples:
    "sum":3200
 }
 
+- GET 192.168.99.100:5000/transactions  (pentru a vedea toate tranzactiile)
 - GET 192.168.99.100:5000/transactions/?user=1&day=1&threshold=1000
 - GET 192.168.99.100:5000/balance/?user=1&since=1&until=10
