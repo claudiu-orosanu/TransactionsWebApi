@@ -1,7 +1,9 @@
 Steps to run the project:
 
 1. In docker command line, enter:
+
 	docker-compose up
+	
 Make sure that you are in the folder that contains the docker-compose.yml file.
 
 2. That's it, you can send http requests to the server. The address should be 192.168.99.100:5000.
