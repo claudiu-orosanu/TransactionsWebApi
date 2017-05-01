@@ -6,7 +6,7 @@ namespace TransactionsWebApi
 {
     class Program
     {
-        private const string BaseAddress = "http://127.0.0.1:5000";
+        private const string BaseAddress = "http://*:5000";
 
         static void Main(string[] args)
         {

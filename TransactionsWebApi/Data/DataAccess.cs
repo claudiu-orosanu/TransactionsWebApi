@@ -10,10 +10,11 @@ namespace TransactionsWebApi.Data
     {
         private readonly IMongoClient _client;
         private readonly IMongoDatabase _database;
+        private const string ConnectionString = "mongodb://192.168.99.100:27017";
 
         public DataAccess()
         {
-            _client = new MongoClient();
+            _client = new MongoClient(ConnectionString);
             _database = _client.GetDatabase("money");
         }
 
