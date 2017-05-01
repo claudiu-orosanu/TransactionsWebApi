@@ -19,6 +19,7 @@ The above request will insert some data into the database (data created by me). 
 
 
 - POST 192.168.99.100:5000/transactions with json:  (to insert a transaction)
+
 {
    "sender":1,
    "receiver":2,
