@@ -1,0 +1,14 @@
+web_server:
+    build:
+      "TransactionsWebApi"
+    ports:
+        - 5000:5000
+    links:
+        - mongo
+
+mongo:
+    image: mongo
+    container_name: mongo
+    command: mongod --smallfiles
+    ports:
+        - '27017:27017'

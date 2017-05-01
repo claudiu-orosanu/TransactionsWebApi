@@ -1,0 +1,25 @@
+﻿using System;
+using System.Threading;
+using Microsoft.Owin.Hosting;
+
+namespace TransactionsWebApi
+{
+    class Program
+    {
+        private const string BaseAddress = "http://127.0.0.1:5000";
+
+        static void Main(string[] args)
+        {
+            using (WebApp.Start<Startup>(url: BaseAddress))
+            {
+                Console.WriteLine("Application started...");
+                string readVal = Console.ReadLine();
+                while (string.IsNullOrEmpty(readVal))
+                {
+                    Thread.Sleep(5000);
+                    readVal = Console.ReadLine();
+                }
+            }
+        }
+    }
+}
